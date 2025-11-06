@@ -126,7 +126,7 @@ Deploy to GitHub Pages, Vercel, or any static host for free:
 
 ### Screenshots
 - **Home Page**:
-  ![Home Page Screenshot](./screenshots/home.png)
+  ![Home Page Screenshot](./Extra/ideas/aaa.png)
 
 - **Token Form**:
   ![Form Screenshot](./screenshots/form.png)
