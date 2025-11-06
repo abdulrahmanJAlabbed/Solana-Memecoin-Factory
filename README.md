@@ -1,8 +1,6 @@
 # Solana Memecoin Factory
 
 <div align="center">
-  <img src="https://img.shields.io/github/stars/abdulrahmanJAlabbed/Solana-Memecoin-Factory?style=social" alt="GitHub Stars">
-  <img src="https://img.shields.io/github/forks/abdulrahmanJAlabbed/Solana-Memecoin-Factory?style=social" alt="GitHub Forks">
   <img src="https://img.shields.io/badge/Solana-Memecoin%20Generator-blueviolet" alt="Project Badge">
 </div>
 
