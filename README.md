@@ -132,7 +132,7 @@ Deploy to GitHub Pages, Vercel, or any static host for free:
   ![Form Screenshot](./Extra/ideas/aaa.png)
 
 - **3D Preview**:
-  ![Preview Screenshot](./screenshots/preview.png)
+  ![Preview Screenshot](./Images/untitled.gltf)
 
 ## 🛠 Usage Guide
 
