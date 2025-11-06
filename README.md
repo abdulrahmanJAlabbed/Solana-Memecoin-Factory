@@ -132,7 +132,7 @@ Deploy to GitHub Pages, Vercel, or any static host for free:
   ![Form Screenshot](./Extra/ideas/aaa.png)
 
 - **3D Preview**:
-  ![Preview Screenshot](./Extra/index.html)
+[![View 3D Model](./Extra/Screencast from 2025-11-06 11-07-55.webm)](https://abdulrahmanjalabbed.github.io/Solana-Memecoin-Factory/)
 
 ## 🛠 Usage Guide
 
