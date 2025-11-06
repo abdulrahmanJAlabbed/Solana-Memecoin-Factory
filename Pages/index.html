@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Explore our token creation platform for memcoin, SOL, and custom token generation. Launch your own coins with our Solana token generator, coin creation service, and token creation tools, all at a 0.07 SOL fee. Harness best practices, tips, and guides for seamless blockchain deployments." />
+  <meta name="keywords" content="token generation, memcoin, SOL, coin creation, 0.07 SOL fee, crypto, blockchain, token creation" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="../" />
+  <title>soltoken.store</title>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap">
+  </noscript>
+  <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+  
+  <script type="module" src="../Script/wallet.js"></script>
+  <!-- <script type="module" src="../Script/frontend.js"></script> -->
+
+  <!-- Link to external CSS -->
+
+  <link rel="stylesheet" href="../Styles/style.css" media="print" onload="this.media='all'">
+
+  <!-- Third-party JSON-LD and other scripts remain -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a token and how do I create one?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our platform allows you to create custom tokens (including memcoins and SOL tokens)..."
+        }
+      }
+      {
+        "@type": "Question",
+        "name": "How secure is the token creation process?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We employ state-of-the-art security measures and follow industry best practices to ensure your token creation and data are safe and secure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What fees are involved?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our platform charges only 0.07 SOL per token creation, making it one of the most cost-effective solutions available."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I update my token details later?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our platform provides options to update your token details even after creation, ensuring flexibility and control over your token."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use your Solana token generator to create my memecoin or custom SOL tokens?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! Our token creation platform lets you generate your own coin meme or custom tokens at a 0.07 SOL fee, backed by best practices and tutorials."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the benefit of using a token creation platform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Using a token creation platform like ours simplifies the process of creating custom tokens, including memcoins and SOL tokens, with a user-friendly interface and comprehensive guides."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I ensure my token creation follows best practices?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our platform provides detailed tutorials, guides, and checklists to ensure your token creation process follows industry best practices and tips for successful deployment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the key features of your token creation tool?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our token creation tool offers features such as instant deployment, a flat fee of 0.07 SOL, and support for creating custom tokens, memcoins, and SOL tokens."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I generate my own coin meme using your platform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our platform allows you to generate your own coin meme with ease, providing all the necessary tools and support for a successful launch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a fee for using the token creation service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, there is a flat fee of 0.07 SOL for using our token creation service, making it an affordable option for creating custom tokens."
+        }
+      }
+    ]
+  }
+  </script>
+
+
+  <!-- Include Model Viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js" defer></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../favicon_io/site.webmanifest">
+  <link rel="mask-icon" href="../favicon_io/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="../favicon_io/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="../favicon_io/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body style="position: relative;"> 
+    <!-- Header with Logo, Connect Button, and Mobile Hamburger --> 
+     <header class="header">   
+        <div class="logo">soltoken.store</div>   
+        <div class="header-right">
+            <button data-id="" id="ConnectWallet" class="connect-btn">Connect to Wallet</button>     
+            </div> 
+        </header>
+            <section class="hero-banner">
+              <div class="hero-content">
+                <h2>Create. Launch. Dominate.</h2>
+                <p class="hero-subtitle">Your Token, Your Rules - Solana-Powered Revolution</p>
+                <div class="scrolling-ticker">
+                  <span>🔹 5000+ Meme Coin Created</span>
+                  <span>🔸 0.07 SOL Flat Fee</span>
+                  <span>🔹 Instant Deployment</span>
+                </div>
+              </div>
+            </section>
+            <!-- Main section with form and coin preview --> 
+            <main class="main">
+               <div class="content">
+                 <div class="form-container">
+                    <div class="form-header">
+                      <h1>🚀 Create Your Crypto Masterpiece</h1>
+                      <p class="form-subtitle">Build your token in 60 seconds - Revolutionize your crypto journey</p>
+                    </div>
+                    <div class="form-grid">
+                      <div class="form-group double">
+                        <label for="tokenName">Token Name</label>
+                        <input type="text" id="tokenName" placeholder="e.g. SolanaPrime">
+                      </div>
+                      <div class="form-group">
+                        <label for="tokenSymbol">Symbol</label>
+                        <input type="text" id="tokenSymbol" placeholder="e.g. SOLP">
+                      </div>
+                      <div class="form-group">
+                        <label for="decimals">Decimals</label>
+                        <div class="input-with-icon">
+                          <input type="number" id="decimals" value="9">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="supply">Total Supply</label>
+                        <div class="input-with-icon">
+                          <input type="number" id="supply" placeholder="1000000">
+
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="tokenImage">Token Image <span class="file-requirements">(500x500, max 2MB)</span></label>
+                        <div class="file-upload">
+                          <input type="file" id="tokenImage" accept="image/*" style="display: none;">
+                          <div class="upload-container" id="uploadContainer">
+                            <label for="tokenImage" class="upload-label">
+                              <span class="upload-text">📤 Upload Image</span>
+                              <div class="loading-spinner" style="display: none;"></div>
+                            </label>
+                          </div>
+                          <div id="imagePreview"></div>
+                          <div id="errorMessage" class="error-message"></div>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group double">
+                        <label for="description">Token Description</label>
+                        <textarea style="resize: none;" rows="5" cols="15" id="description" placeholder="Describe your token vision..."></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="extraFeature1">Revoke Mint Authority</label>
+                        <label class="switch">
+                          <input type="checkbox" id="extraFeature1" />
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label for="extraFeature2">Revoke Freeze Authority</label>
+                        <label class="switch">
+                          <input type="checkbox" id="extraFeature2"/>
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                        <!-- rest of your HTML remains the same -->
+                      <div class="form-group double">
+                        <button style="align-self: center; width: 100%;" type="button" onclick="toggleExpand()">Add Social Links 🌐</button>
+                      </div>
+                      <div id="expandedOptions" style="display: none;width: 200% !important;">
+                        <div class="form-group double">
+                          <label for="website">Add Your Website</label>
+                          <input type="text" id="website" placeholder="https://yourwebsite.com">
+                        </div>
+                        <div class="form-group double">
+                          <label for="x">Add Your X</label>
+                          <input type="text" id="x" placeholder="https://x.com/yourprofile">
+                        </div>
+                        <div class="form-group double">
+                          <label for="telegram">Add Your Telegram</label>
+                          <input type="text" id="telegram" placeholder="https://t.me/yourprofile">
+                        </div>
+                        <div class="form-group double">
+                          <label for="youtube">Add Your YouTube</label>
+                          <input type="text" id="youtube" placeholder="https://youtube.com/yourchannel">
+                        </div>
+                      </div>
+                    </div>
+                    <button id="withdraw-btn" class="submit-btn">Launch Token (0.07 SOL) ✨</button>
+                  </div>
+                    <div class="coin-preview">       
+                      <div class="atom">
+                        <model-viewer
+                        style="z-index: 5;opacity: 0;" 
+                        src="../Images/untitled.gltf" 
+                        auto-rotate
+                        auto-rotate-delay="0"
+                        camera-controls 
+                        alt="Solana Token Preview"
+                        environment-image="neutral" 
+                        interaction-Prompt="none"
+                        exposure="1" 
+                        shadow-intensity="1" 
+                        shadow-softness="0.5"
+                        camera-orbit="0deg 75deg 250m"
+                        ar 
+                        ar-modes="webxr scene-viewer quick-look" 
+                        ar-scale="auto" 
+                        ar-placement="floor" 
+                        disable-zoom>
+                      </model-viewer>
+                        <div class="orbits">
+                          <div class="electron"></div>
+                          <div class="electron"></div>
+                          <div class="electron"></div>
+                          <div class="electron"></div>
+                          <div class="electron"></div>
+                          <div class="electron"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+            </main>
+            <h1 class="Titles">
+               Explore Additional Token Services
+            </h1>
+            <p style="width: 100%; align-self: center; text-align: center; color: rgba(219, 219, 219, 0.705); font-size: 1.5rem;">
+               All Our Services Cost Only 0.07 SOL!
+            </p>
+            <!-- Cards Section --> 
+            <section class="cards-section">
+                  <div class="cards-grid">
+                    <div class="card">
+                      <img src="../Images/token.png" alt="Solana Token Generator">       
+                      <h2>Solana Token Generator</h2>
+                      <p>Experience lightning speed token creation with our platform.</p>
+                      <button>Explore Features</button>     
+                    </div>
+                    <div class="card">
+                      <img src="../Images/cyber-security.png" alt="Revoke solana Token Freeze Authority">       
+                      <h2>Revoke Freeze Authority</h2>
+                      <p>Revoke the freeze authority of your SOL tokens with a single click.</p>
+                      <button>Explore Features</button>     
+                    </div>
+                    <div class="card">
+                      <img src="../Images/network.png" alt="Update Solana Token Metadata">       
+                      <h2>Update Token Metadata</h2>
+                      <p>Update your token metadata with ease and flexibility.</p>
+                      <button>Explore Features</button>     
+                    </div>
+                    <div class="card">
+                      <img src="../Images/add-coin.png" alt="Mint Solana Token">       
+                      <h2>Mint Token</h2>
+                      <p>Mint new tokens and manage your supply with our platform.</p>
+                      <button>Explore Features</button>     
+                    </div>
+                    <div class="card">
+                      <img src="../Images/money.png" alt="Revoke Solana Token Mint Authority">       
+                      <h2>Revoke Mint Authority</h2>
+                      <p>Revoke the mint authority of your SOL tokens with a single click.</p>
+                      <button>Explore Features</button>     
+                    </div>
+                    <div class="card">
+                      <img src="../Images/cryptocurrency.png" alt="Create Solana Liquidity Pool Token">       
+                      <h2>Create Liquidity Pool</h2>
+                      <p>Create a liquidity pool for your tokens and earn rewards.</p>
+                      <button>Explore Features</button>     
+                    </div>
+                  </div>
+            </section>
+
+            <!-- FAQ Section with SEO-rich content --> 
+            <section class="faq-section">
+               <h2>Frequently Asked Questions</h2>
+               <div class="faq-item">
+                 <h3>What is a token and how do I create one?</h3>
+                 <div class="faq-answer">
+                     <p>Our platform allows you to create custom tokens (including memcoins and SOL tokens) quickly and efficiently with a minimal fee of 0.07 SOL. Simply fill in the form with your token name, symbol, decimals, supply, and image to get started.</p>
+                  </div>
+               </div>
+               <div class="faq-item">
+                  <h3>How secure is the token creation process?</h3>
+                  <div class="faq-answer">
+                     <p>We employ state-of-the-art security measures and follow industry best practices to ensure your token creation and data are safe and secure.</p>
+                  </div>
+               </div>
+               <div class="faq-item">
+                  <h3>What fees are involved?</h3>
+                  <div class="faq-answer">
+                     <p>Our platform charges only 0.07 SOL per token creation, making it one of the most cost-effective solutions available.</p>
+                  </div>
+               </div>
+               <div class="faq-item">
+                  <h3>Can I update my token details later?</h3>
+                  <div class="faq-answer">
+                     <p>Yes, our platform provides options to update your token details even after creation, ensuring flexibility and control over your token.</p>
+                  </div>
+               </div>
+               <div class="faq-item">
+                  <h3>Can I use your Solana token generator to create my memecoin or custom SOL tokens?</h3>
+                  <div class="faq-answer">
+                     <p>Absolutely! Our token creation platform lets you generat your own coin meme or custom tokens at a 0.07 SOL fee, backed by best practices and tutorials.</p>
+                  </div>
+               </div>
+            </section>
+            <!-- Footer Support Line --> 
+            <footer class="footer-support">   Need support? Contact us: <a href="mailto:support@example.com" style="color:#ffcc00;">support@example.com</a> 
+            </footer>
+
+            <!-- Wallet Modal -->
+            <div class="wallet-modal" id="walletModal">
+              <div class="wallet-modal-content">
+                <div class="wallet-modal-header">
+                  <h3>Connect Wallet</h3>
+                  <span class="close-modal">&times;</span>
+                </div>
+                <div class="wallet-options">
+                  <div class="wallet-option" id="phantom">
+                    <img src="../Images/Phantom_SVG_Icon.svg" alt="Phantom" />
+                    <span>Phantom</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+ <script src="../Script/script.js"></script>
+</body>
+</html>
