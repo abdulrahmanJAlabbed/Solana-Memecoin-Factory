@@ -1,4 +1,4 @@
-# Solana Memecoin Factory
+# Solana Memecoin Generator
 
 <div align="center">
   <img src="https://img.shields.io/badge/Solana-Memecoin%20Generator-blueviolet" alt="Project Badge">
@@ -171,3 +171,4 @@ We welcome contributions! Fork the repo, make changes, and submit a PR.
 
 
 Built with ❤️ by Abdulrahman. Let's meme the world on Solana! 🚀
+
